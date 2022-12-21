@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id = "hello">
+        <marquee> CHÀO MỪNG BẠN ĐẾN VỚI WEBSITE QUẢN LÝ HỌC PHẦN CỦA KHOA TOÁN-CƠ-TIN HỌC !!!</marquee>
+    </div>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="img/logo.jpg" >
+                    <!-- <marquee> Chao mung ban den voi Website quan ly hoc phan khoa toan co tin hoc</marquee> -->
+
+                </a>
+                <!-- <marquee> Chao mung ban den voi Website quan ly hoc phan khoa toan co tin hoc</marquee> -->
+                <!-- <ul id="slogan">
+                    <li>Website quan ly hoc phan</li>
+                    <li>Khoa Toan-Co-Tin Hoc</li>
+                </ul> -->
+                 <ul id="main-menu">
+                    <li><a href="">Trang Chủ</a></li>
+                    <li><a href="">Ngành</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Khoa Học Dữ Liệu</a>
+                                <ul class="sub-menu">
+                                    <li><a href="introkhdl.html">Giới Thiệu</a></li>
+                                    <li><a href="">Học Phần Chương Trình</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Máy Tính Khoa Học Và Thông Tin</a>
+                                <ul class="sub-menu">
+                                    <li><a href="intromtkh.html">Giới Thiệu</a></li>
+                                    <li><a href="">Học Phần Chương Trình</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="introkhdl.html">Toán Tin</a>
+                                <ul class="sub-menu">
+                                    <li><a href="intromtkh.html">Giới Thiệu</a></li>
+                                    <li><a href="">Học Phần Chương Trình</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="intro">Toán Học</a>
+                                <ul class="sub-menu">
+                                    <li><a href="intromtkh.html">Giới Thiệu</a></li>
+                                    <li><a href="">Học Phần Chương Trình</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Chương Trình Đào Tạo</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Chương Trình Học</a></li>
+                            <li><a href="">Thống Kê Học Phần</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="http://dangkyhoc.vnu.edu.vn/">Đăng Ký Học Phần</a></li>
+                    <li><a href="">Đăng Xuất(Log out)</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id ="slide">
+        <img src="img/logo.png">
+    </div>
+
+    <div id="content">
+        <h1>Giới Thiệu</h1>
+        <hr>
+        <p>Chào mừng các bạn đã đến với website quản lý học phần của khoa TOÁN-CƠ-TIN HỌC.</p>
+        <p>Đây là một website sẽ giúp cho các bạn học sinh,sinh viên  thuộc ngành nào sẽ có thể xem được các học 
+            phần mà ngành của mình có,xem được các học phần mà mình cần phải học.
+        <p>Ngoài ra website còn cung cấp cho bạn biết dự kiến các kỳ học tới bạn sẽ nên học những gì ; thống kê các học phần bạn đã học và các học phần bạn 
+            chưa học để từ đó giúp sinh viên có thể nắm bắt được tình hình học của mình và có thể sắp xếp lịch học 
+            của mình sao cho đạt kết quả tốt nhất. 
+        </p>
+        </p>
+        <p>Nội dung của website này dựa hoàn toàn vào khung chương trình đào tạo của Trường Đại Học Khoa Học Tự Nhiên
+            - Đại Học Quốc Gia Hà Nội.
+        </p>
+    </div>
+
+    <div id="contact">
+        <div>Khoa Toán - Cơ - Tin học</div>
+        <div>Trường ĐH Khoa học Tự nhiên, ĐHQG Hà Nội, <strong>334 Nguyễn Trãi, Thanh Xuân, Hà Nội, Việt Nam</strong></div>
+        <div>Văn phòng Khoa:<strong> (+84) 24 38 58 11 35</strong>, Phòng máy tính: <strong>(+84) 24 38 58 15 30</strong></div>
+        <div> </div>
+        <div><strong>Fanpage: </strong><a href="https://www.facebook.com/KhoaToanCoTinhoc">https://www.facebook.com/KhoaToanCoTinhoc</a></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+body{
+    background-image: url("https://wallpapercave.com/wp/wp2732962.jpg");
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+#header{
+    background-color:#131921;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+}
+
+#logo{
+    padding:  5px 0px;
+}
+
+#logo img{
+    max-width: 50px;
+    height: auto;
+}
+
+#main-menu{
+    display:flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-menu li{
+    position: relative;
+}
+
+#main-menu li a{
+    color: white;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color:black;
+    padding: 15px 0px;
+    list-style: none;
+    width: 240px;
+    border: 1px solid #434343;
+    display: none;
+}
+
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid #434343;
+}
+
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid #d6e045;
+}
+
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{
+    left:240px;
+    top:-15px;
+}
+
+
+#main-menu>li>a{
+    position: relative;
+}
+
+#main-menu>li>a::before{
+    content:"";
+    height: 4px;
+    width: 0px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition:0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+
+#main-menu>li.has-child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content:"\f107";
+    color:rgb(120, 122, 125);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 0px;
+}
+
+#main-menu .sub-menu li:hover>a{
+    color:crimson;
+}
+
+#main-menu .sub-menu>li.has-child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content:"\f105";
+    color:rgb(120, 122, 125);
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 8px 0px;
+}
+
+#main-menu .sub-menu>li.has-child:hover::after{
+    color:crimson;
+}
+
+#hello{
+    background-color: black;
+}
+#hello marquee{
+    color:#d6e045;
+    font-size: 16px;
+}
+
+#slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#content{
+    padding: 50px;
+}
+#content h1{
+    color:white;
+    font-size: 32px;
+    left: 20px;
+}
+
+#content p{
+    color:white;
+    font-size: 20px;
+}
+
+#contact{
+    background-color: yellow;
+    text-align: right;
+}
+
+
+
